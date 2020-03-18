@@ -71,8 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.522" />
-    
-    
+   
     <!--exibe os tipos de montadora-->
     <Spinner
         android:id="@+id/spinner3"
@@ -84,6 +83,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.484" />
 
+        <!--Botao que exibe o texto "Pesquisar"-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.786" />
+    
     <!--exibe o logotipo da empresa--> 
     <ImageView
         android:id="@+id/imageView2"
@@ -97,17 +109,13 @@
         app:layout_constraintVertical_bias="0.853"
         app:srcCompat="@drawable/unnamed" />
 
-    <!--Botao que exibe o texto "Pesquisar"-->
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pesquisar"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.786" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--3. Quando é feita a escolha da montadora mostre os veículos junto com a motorização/4. Crie mais de uma tela-->
+<!--Em uma segunda atividade serao exibidas as opcoes de veiculo de acordo com as preferencias do cliente-->
+
+<!--5. Utilize ActivityForResult para retornar as escolhas feitas para a tela principal-->
+<!--Apos a escolha do cliente, o app exibe o veiculo escolhido na atividade principal-->
+
+<!--6. Utilize SharedPreferences para armazenar a última escolha feita/7. Apresente a última escolha feita ao reabrir o app-->
+<!--O app armazena a ultima escolha do cliente e a exibe quando o cliente abre o app-->
